@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(48, 48, 48);
+}
+.tab-bar {
+    display: flex;
+    justify-content: space-around;
+
+}
+.tab {
+    background-color: rgb(124, 245, 245);
+    padding: 10px 50px;
+    margin: 20px;
+}
