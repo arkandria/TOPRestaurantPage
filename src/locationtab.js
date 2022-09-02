@@ -1,6 +1,6 @@
-import pizza from './img/pizza.png';
+import map from './img/map.png';
 
-const homeDisplay = () => {
+const locationDisplay = () => {
     let container = document.getElementById("content");
     if (container.hasChildNodes()) {
         container.removeChild(container.lastChild);
@@ -10,17 +10,17 @@ const homeDisplay = () => {
     container.appendChild(display);
     let title = document.createElement("div");
     title.classList.add("title");
-    title.textContent = "The Food Forge";
+    title.textContent = "Location";
     display.appendChild(title);
     const photo = new Image();
-    photo.src = pizza;
-    photo.alt ='Pizza';
+    photo.src = map;
+    photo.alt ='Map';
     photo.setAttribute('class', 'hero-img');
     display.appendChild(photo);
     let text = document.createElement("div");
     text.setAttribute('class', 'home-text');
-    text.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc odio, mattis sed tempor quis, molestie non justo. Aenean ut ante quis ex commodo hendrerit in ut metus. Vestibulum mi lectus, consequat a placerat in, porttitor et urna. Nunc sed rutrum nisi. Pellentesque eleifend efficitur sapien. Pellentesque tempor ex sed dapibus bibendum. Aliquam eu risus vel nisi ullamcorper placerat.";
+    text.textContent = "1715 Randolph Street, Natick, Massachusetts(MA), 01760";
     display.appendChild(text);
 }
 
-export { homeDisplay };
+export { locationDisplay };
